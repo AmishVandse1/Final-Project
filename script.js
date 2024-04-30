@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (selectedNumber === onlineGamblingPageNumber) {
    
-            resultText.innerHTML = 'Congratulations! You won!<br><a href="online_gambling.html">Go to Online Gambling</a>';
+            resultText.innerHTML = 'Congratulations! You won!<br><a href="online_gambling.html">Click Here!</a>';
         } else {
             resultText.textContent = 'Sorry, you lost. Click Again';
         }
