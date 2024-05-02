@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const numbers = [1, 2, 3, 4, 5, 6, 7];
+    const strings = ["Whomp Whomp, you lost, click again", "Click Again you lost", "Uh oh you lost, Click Again", "You should click again", "You are now poor, Click again"];
 
     const onlineGamblingPageNumber = 7;
 
@@ -14,9 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (selectedNumber === onlineGamblingPageNumber) {
    
-            resultText.innerHTML = 'Congratulations! You won!<br><a href="online_gambling.html">Click Here!</a>';
+            resultText.innerHTML = 'MAX WIN! Congratulations, you won!<br><a href="online_gambling.html">Click Here!</a>';
         } else {
-            resultText.textContent = 'Sorry, you lost. Click Again';
+            const randomStringIndex = Math.floor(Math.random() * strings.length);
+            const randomString = strings[randomStringIndex];
+            resultText.textContent = randomString;
+        
         }
     });
 });
